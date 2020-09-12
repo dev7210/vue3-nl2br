@@ -19,13 +19,13 @@ npm install --save vue3-nl2br
 ## Usage
 
 ```html
-<nl2br tag="p" :text="`myLine1\nmyLine2`" class-name="foo bar" />
+<nl2br tag="p" :text="`line1\nline2`" class="foo bar" />
 ```
 
 is rendered to
 
 ```html
-<p class="foo bar">myLine1<br>myLine2</p>
+<p class="foo bar">line1<br>line2</p>
 ```
 
 ### (1) Global registration
@@ -46,7 +46,7 @@ https://vuejs.org/v2/guide/components.html#Local-Registration
 // MyComponent.vue
 
 <template>
-  <nl2br tag="p" :text="`myLine1\nmyLine2`" />
+  <nl2br tag="p" :text="`line1\nline2`" />
 </template>
 
 <script>
@@ -70,7 +70,7 @@ export default {
 - `text`: Text in the tag.
   - Type: `String`
   - Required: true
-- `className`: HTML class name(s) 
+- `class`: HTML class name(s) 
   - Type: `String`
   - Required: false
 
