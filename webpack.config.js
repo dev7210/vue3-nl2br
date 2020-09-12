@@ -4,8 +4,8 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'vue-nl2br.js',
-    library: ['vueNl2br'],
+    filename: 'vue3-nl2br.js',
+    library: ['vue3Nl2br'],
     libraryTarget: 'umd',
   },
   module: {
